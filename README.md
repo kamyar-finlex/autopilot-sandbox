@@ -9,3 +9,5 @@ Live site: <https://kamyar-finlex.github.io/autopilot-sandbox/>
 Nothing real lives here. CI checks one rule: every Markdown file starts with a `# ` heading.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how changes land here.
+
+See [HOW-IT-WORKS.md](HOW-IT-WORKS.md) for how a ticket travels from Linear to the live site.
