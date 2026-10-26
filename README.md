@@ -11,3 +11,5 @@ Nothing real lives here. CI checks one rule: every Markdown file starts with a `
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how changes land here.
 
 See [HOW-IT-WORKS.md](HOW-IT-WORKS.md) for how a ticket travels from Linear to the live site.
+
+See [FAQ.md](FAQ.md) for answers to the questions people ask when they first see Autopilot.
