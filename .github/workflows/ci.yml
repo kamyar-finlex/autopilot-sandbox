@@ -1,0 +1,23 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  headings:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Every Markdown file starts with a heading
+        run: |
+          status=0
+          for f in $(git ls-files '*.md'); do
+            head -1 "$f" | grep -q '^# ' || { echo "::error file=$f::$f does not start with a '# ' heading"; status=1; }
+          done
+          exit $status
